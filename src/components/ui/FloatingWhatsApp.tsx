@@ -29,7 +29,7 @@ export default function FloatingWhatsApp() {
       href="https://wa.me/919876543210?text=Hi!%20I'm%20interested%20in%20building%20a%20home%20in%20Chennai."
       target="_blank"
       rel="noopener noreferrer"
-      className={`fixed bottom-[150px] right-8 md:bottom-8 md:right-8 z-[100] flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-[0_8px_30px_rgb(37,211,102,0.4)] transition-all duration-300 hover:scale-110 active:scale-95 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
+      className={`fixed bottom-[100px] right-4 md:bottom-8 md:right-8 z-[100] flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-[0_8px_30px_rgb(37,211,102,0.4)] transition-all duration-300 hover:scale-110 active:scale-95 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
         }`}
       aria-label="Chat with us on WhatsApp"
     >
