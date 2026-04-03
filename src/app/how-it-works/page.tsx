@@ -4,6 +4,8 @@ import {
   ScrollText, Flame, Beaker, Hammer, 
   BrickWall, Grid, PaintRoller, MoveRight, Key 
 } from "lucide-react";
+import FinalCTASection from "@/components/home/FinalCTASection";
+import VaastuQualityBlock from "@/components/ui/VaastuQualityBlock";
 
 const steps = [
   { title: "Initial Consultation & Site Visit", icon: Users, img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&fm=webp&q=60" },
@@ -31,15 +33,28 @@ export default function HowItWorks() {
             <h1 className="text-3xl md:text-3xl lg:text-4xl font-black text-gray-900 tracking-tight mb-4">
               How We Work
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 font-medium leading-relaxed">
-              Transparency from Bhoomi Puja to Key Handover. We handle the complexity, so you can focus on building your legacy.
+            <p className="text-lg md:text-xl text-gray-600 font-medium leading-relaxed max-w-2xl mx-auto">
+              Building premium homes in Chennai with absolute transparency, fixed-price contracts, and zero hidden costs.
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-xl mx-auto px-4 mt-16 mb-4 relative z-10">
+        <div className="bg-white border border-gray-200 rounded-3xl p-6 flex flex-col sm:flex-row items-center gap-6 shadow-xl shadow-blue-900/5">
+          <div className="w-20 h-20 bg-blue-50 rounded-full overflow-hidden shrink-0 border border-blue-100 p-1 flex items-center justify-center">
+             <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80" alt="Project Manager" className="w-full h-full object-cover rounded-full" />
+          </div>
+          <div className="text-center sm:text-left">
+             <h3 className="text-xs font-black tracking-widest text-blue-600 uppercase mb-1.5">Your Single Point of Contact</h3>
+             <p className="text-gray-900 font-bold text-lg mb-2 leading-tight">Dedicated Project Manager</p>
+             <p className="text-sm font-medium text-gray-500 leading-snug">A dedicated civil engineer handles your entire build from end to end. Zero chaos, weekly WhatsApp reports, and complete transparency.</p>
           </div>
         </div>
       </div>
       
       {/* 12-Step Vertical Timeline Framework */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative">
         
         {/* Center Guide Line */}
         <div className="absolute left-8 md:left-1/2 top-24 bottom-24 w-0.5 bg-gray-200 md:-translate-x-1/2 z-0" />
@@ -83,14 +98,50 @@ export default function HowItWorks() {
                   </div>
 
                   {/* Representative Image Block */}
-                  <div className="relative w-full h-48 sm:h-56 bg-gray-100 rounded-2xl overflow-hidden border border-gray-100/50">
-                    <img 
-                      src={step.img} 
-                      alt={`Illustration of ${step.title}`}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
-                      loading="lazy" 
-                    />
-                  </div>
+                  {idx === 7 ? (
+                    <div className="relative w-full h-56 sm:h-64 bg-gradient-to-tr from-blue-50 to-gray-100 rounded-2xl overflow-hidden border border-gray-100/50 flex flex-col items-center justify-end group p-4 pb-0">
+                      <div className="w-[150px] h-[90%] bg-white rounded-t-[1.5rem] border-[6px] border-b-0 border-gray-800 shadow-2xl overflow-hidden transition-transform duration-700 group-hover:-translate-y-4 relative flex flex-col">
+                        <div className="bg-[#075E54] w-full px-3 py-2 text-white flex items-center gap-2 shadow-sm">
+                           <div className="w-5 h-5 bg-white/20 rounded-full shrink-0 flex items-center justify-center"><Users className="w-3 h-3 text-white" /></div>
+                           <div className="text-[9px] font-bold leading-tight">
+                             VaastuCorp PM<br/>
+                             <span className="font-normal opacity-80 text-[7px]">online</span>
+                           </div>
+                        </div>
+                        <div className="p-2.5 bg-[#E5DDD5] flex-1 space-y-2 relative">
+                           <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]" />
+                           <div className="bg-white p-2 rounded-lg rounded-tl-none shadow-sm text-[8px] text-gray-800 relative z-10 font-medium">
+                             <span className="font-bold flex items-center gap-1 mb-1 text-blue-900">🔔 Phase 08 Update</span>
+                             Superstructure column casting completed today. Plinth beam cured. Images attached below.
+                           </div>
+                           <div className="w-full h-16 bg-gray-300 rounded overflow-hidden relative z-10 shadow-sm border border-white">
+                              <img src={step.img} className="w-full h-full object-cover" alt="Progress Photo" />
+                           </div>
+                        </div>
+                      </div>
+                      <div className="absolute top-4 right-4 bg-white/95 backdrop-blur px-3 py-2 rounded-xl text-[10px] sm:text-xs font-bold text-green-700 shadow-lg border border-green-100 z-10 flex items-center gap-2">
+                         <span className="relative flex h-2 w-2">
+                           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                           <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                         </span>
+                         Weekly Progress WhatsApp Report
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="relative w-full h-48 sm:h-56 bg-gray-100 rounded-2xl overflow-hidden border border-gray-100/50">
+                      <img 
+                        src={step.img} 
+                        alt={`Illustration of ${step.title}`}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                        loading="lazy" 
+                      />
+                      {idx === 1 && (
+                        <div className="absolute top-4 right-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-lg text-xs font-bold text-blue-800 shadow-sm border border-gray-100 z-10 flex items-center gap-1.5 uppercase tracking-wider">
+                          <Scale3d className="w-3.5 h-3.5" /> Sample 3D Render
+                        </div>
+                      )}
+                    </div>
+                  )}
 
                 </div>
 
@@ -100,20 +151,8 @@ export default function HowItWorks() {
         })}
       </div>
 
-      {/* Final Conversion Bottom Bar */}
-      <section className="bg-blue-600 py-20 px-4 text-center">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-black text-white tracking-tight mb-8">
-            Ready to explore our construction models?
-          </h2>
-          <Link 
-            href="/packages"
-            className="inline-flex items-center justify-center gap-3 bg-white text-blue-700 font-black px-10 py-5 rounded-2xl text-lg hover:bg-gray-50 hover:scale-105 transition-all shadow-xl shadow-blue-900/30 active:scale-95"
-          >
-            View Packages <MoveRight className="w-6 h-6" />
-          </Link>
-        </div>
-      </section>
+      <VaastuQualityBlock />
+      <FinalCTASection />
 
     </div>
   );

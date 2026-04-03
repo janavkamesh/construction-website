@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { Calculator } from "lucide-react";
 import PricingSection from "@/components/home/PricingSection";
+import FinalCTASection from "@/components/home/FinalCTASection";
+import LeadMagnet from "@/components/ui/LeadMagnet";
 
 export default function Packages() {
   const [sqft, setSqft] = useState<number | "">("");
@@ -22,7 +24,7 @@ export default function Packages() {
         
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h1 className="text-3xl md:text-3xl lg:text-4xl font-black text-gray-900 tracking-tight mb-4">Packages & Pricing</h1>
-          <p className="text-lg text-gray-600 font-medium">Fully transparent pricing. Calculate your exact construction cost right now.</p>
+          <p className="text-lg text-gray-600 font-medium max-w-2xl mx-auto">Building premium homes in Chennai with absolute transparency, fixed-price contracts, and zero hidden costs.</p>
         </div>
 
         {/* Interactive Calculator */}
@@ -83,6 +85,75 @@ export default function Packages() {
       </div>
 
       <PricingSection />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
+          <div>
+            {/* Material Transparency */}
+            <div className="mb-12">
+              <h2 className="text-2xl font-black text-gray-900 mb-6">Standard Material Partners</h2>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
+                  <p className="text-sm font-bold text-gray-900 mb-1">Cement</p>
+                  <p className="text-sm text-gray-500 font-medium">UltraTech / Ramco</p>
+                </div>
+                <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
+                  <p className="text-sm font-bold text-gray-900 mb-1">Wiring</p>
+                  <p className="text-sm text-gray-500 font-medium">Finolex</p>
+                </div>
+                <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
+                  <p className="text-sm font-bold text-gray-900 mb-1">Plumbing</p>
+                  <p className="text-sm text-gray-500 font-medium">Ashirvad</p>
+                </div>
+                <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
+                  <p className="text-sm font-bold text-gray-900 mb-1">Steel</p>
+                  <p className="text-sm text-gray-500 font-medium">JSW / Tata Tiscon</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Out of Scope */}
+            <div className="bg-red-50 border border-red-100 rounded-2xl p-6 shadow-sm">
+              <h3 className="text-red-800 font-bold text-base mb-3 flex items-center gap-2">
+                <span className="text-xl">⚠️</span> What's Not Included (Out of Scope)
+              </h3>
+              <ul className="list-disc list-inside text-red-700/90 font-medium space-y-1.5 text-sm">
+                <li>EB Connection Fees & Deposits</li>
+                <li>Borewell Drilling & Motor Installation</li>
+                <li>Plan Approval Fees (if out of city limits)</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Financial FAQ */}
+          <div>
+            <h2 className="text-2xl font-black text-gray-900 mb-6">Frequently Asked Pricing Questions</h2>
+            <div className="space-y-4">
+              <details className="group bg-white rounded-2xl border border-gray-100 shadow-sm [&_summary::-webkit-details-marker]:hidden">
+                <summary className="cursor-pointer p-6 font-bold text-gray-900 flex justify-between items-center text-sm md:text-base">
+                  Do prices change after construction starts?
+                  <span className="text-blue-600 font-normal transition duration-300 group-open:rotate-180">+</span>
+                </summary>
+                <div className="px-6 pb-6 text-gray-600 font-medium text-sm leading-relaxed border-t border-gray-50 pt-4">
+                  No. Once you sign the fixed-price contract, the price is locked. We absorb any normal material price escalations during the contracted timeframe.
+                </div>
+              </details>
+              <details className="group bg-white rounded-2xl border border-gray-100 shadow-sm [&_summary::-webkit-details-marker]:hidden">
+                <summary className="cursor-pointer p-6 font-bold text-gray-900 flex justify-between items-center text-sm md:text-base">
+                  Are there hidden escalation charges?
+                  <span className="text-blue-600 font-normal transition duration-300 group-open:rotate-180">+</span>
+                </summary>
+                <div className="px-6 pb-6 text-gray-600 font-medium text-sm leading-relaxed border-t border-gray-50 pt-4">
+                  Absolutely zero hidden charges. The only time your price changes is if you explicitly request a premium material upgrade or structural change mid-project.
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <LeadMagnet />
+      <FinalCTASection />
     </div>
   );
 }
