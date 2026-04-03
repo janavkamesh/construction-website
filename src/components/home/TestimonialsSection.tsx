@@ -47,15 +47,15 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-24 bg-white relative">
+    <section className="py-12 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="text-center max-w-3xl mx-auto mb-16 px-4">
-          <h2 className="text-3xl md:text-5xl font-black text-gray-900 tracking-tight leading-tight mb-6">
-            Don&apos;t just take our word for it.
+        <div className="text-center max-w-3xl mx-auto mb-8 px-4">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-6 font-heading">
+            Don&apos;t Just Take Our Word For It.
           </h2>
           <p className="text-lg text-gray-500 font-medium">
-            Hear from people who built their dream homes without the nightmare of dealing with local contractors.
+            Hear from families who trusted us with their largest financial decision.
           </p>
         </div>
 
@@ -76,7 +76,7 @@ export default function TestimonialsSection() {
               </p>
               <div className="flex items-center justify-between border-t border-gray-200 pt-6">
                 <div>
-                  <h4 className="font-bold text-gray-900">{test.name}</h4>
+                  <h4 className="font-bold text-gray-900 font-heading">{test.name}</h4>
                   <p className="text-sm text-gray-500">{test.role} • {test.location}</p>
                 </div>
               </div>

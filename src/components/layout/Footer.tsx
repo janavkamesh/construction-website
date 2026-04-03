@@ -3,20 +3,20 @@ import { MoveRight, MapPin, Phone, Mail, CheckCircle2 } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 pt-20 pb-10 text-gray-300">
+    <footer className="bg-gray-900 pt-10 pb-10 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-8">
           
           {/* Brand & Trust Column */}
           <div className="space-y-6 lg:col-span-2 xl:pr-16">
             <Link href="/" className="inline-block">
-              <span className="text-3xl font-black tracking-tight text-white mb-2 block">
+              <span className="text-3xl font-black tracking-tight text-white mb-2 block font-heading">
                 Vaastu<span className="text-blue-500">Corp</span>
               </span>
               <p className="text-sm text-gray-400 font-medium">Builders you can trust</p>
             </Link>
             <p className="text-sm text-gray-400 leading-relaxed max-w-sm">
-              Building homes in Chennai with absolute transparency, fixed-price contracts, and zero hidden costs. Your dream home, exactly as planned.
+              Chennai’s most transparent residential and commercial construction company. Bringing engineering precision and fixed-price reliability to the local real estate market.
             </p>
             <div className="bg-gray-800/50 rounded-xl p-4 border border-gray-700/50 hover:bg-gray-800 transition-colors inline-block">
               <div className="flex items-center gap-3">
@@ -33,7 +33,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-bold mb-6 text-lg tracking-tight">Company</h3>
+            <h3 className="text-white font-bold mb-6 text-lg tracking-tight font-heading">Company</h3>
             <ul className="space-y-4">
               {[
                 { name: "Projects", href: "/projects" },
@@ -56,7 +56,7 @@ export default function Footer() {
 
           {/* Contact Information */}
           <div>
-            <h3 className="text-white font-bold mb-6 text-lg tracking-tight">Get in Touch</h3>
+            <h3 className="text-white font-bold mb-6 text-lg tracking-tight font-heading">Get in Touch</h3>
             <ul className="space-y-5">
               <li className="flex items-start gap-4">
                 <MapPin className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
@@ -82,7 +82,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4 pb-16 md:pb-0">
+        <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4 pb-8 md:pb-0">
           <p className="text-xs text-gray-500">
             © {new Date().getFullYear()} VaastuCorp Builders. All rights reserved.
           </p>

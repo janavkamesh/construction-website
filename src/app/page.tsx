@@ -7,12 +7,19 @@ import CostCalculator from "@/components/home/CostCalculator";
 import PricingSection from "@/components/home/PricingSection";
 import FAQSection from "@/components/home/FAQSection";
 import FinalCTASection from "@/components/home/FinalCTASection";
+import LeadMagnet from "@/components/ui/LeadMagnet";
+import ServicesSection from "@/components/home/ServicesSection";
+import WhyUsSection from "@/components/home/WhyUsSection";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
       
+      <ServicesSection />
+
+      <WhyUsSection />
+
       <HomeProjectsSection />
       
       <SoftCTA 
@@ -21,7 +28,9 @@ export default function Home() {
       />
       
       <TestimonialsSection />
+
       <ProcessSection />
+      
       <CostCalculator />
       <PricingSection />
       
@@ -32,6 +41,7 @@ export default function Home() {
       
       <FAQSection />
       <FinalCTASection />
+      <LeadMagnet />
     </>
   );
 }

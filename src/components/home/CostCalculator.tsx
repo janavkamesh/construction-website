@@ -28,14 +28,14 @@ export default function CostCalculator() {
   };
 
   return (
-    <section className="py-12 bg-blue-50 relative overflow-hidden" id="calculator">
+    <section className="py-6 bg-blue-50 relative overflow-hidden" id="calculator">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-xl mb-4 shadow-inner">
             <Calculator className="w-6 h-6 text-blue-600" />
           </div>
-          <h2 className="text-2xl md:text-4xl font-black text-gray-900 tracking-tight mb-2">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-2 font-heading">
             Instant Construction Cost Calculator
           </h2>
           <p className="text-sm sm:text-base text-gray-600 font-medium max-w-2xl mx-auto">
@@ -48,7 +48,7 @@ export default function CostCalculator() {
           <div className="mb-10">
             <div className="flex justify-between items-end mb-4">
               <label className="text-sm font-bold text-gray-900">Your Plot Size (Sq.Ft)</label>
-              <div className="text-3xl font-black text-blue-600">{plotSize} sq.ft</div>
+              <div className="text-3xl font-bold text-blue-600 font-heading">{plotSize} sq.ft</div>
             </div>
             
             <input
@@ -72,21 +72,21 @@ export default function CostCalculator() {
             {/* Standard Tier */}
             <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 text-center transition-all hover:shadow-md">
               <span className="text-sm font-bold text-gray-600 block mb-2">Standard (₹1,799/sq.ft)</span>
-              <div className="text-2xl font-black text-gray-900">{formatPrice(buildArea * rates.standard)}</div>
+              <div className="text-2xl font-bold text-gray-900">{formatPrice(buildArea * rates.standard)}</div>
             </div>
             
             {/* Premium Tier */}
             <div className="bg-blue-600 border border-blue-600 rounded-2xl p-6 text-center shadow-lg shadow-blue-600/20 transform md:-translate-y-2">
               <span className="text-sm font-bold text-blue-100 block mb-2 flex items-center justify-center gap-1">
-                Premium (₹2,199/sq.ft) <span className="bg-yellow-400 text-yellow-900 text-[10px] px-2 py-0.5 rounded-full font-black uppercase tracking-wider">Most Chosen</span>
+                Premium (₹2,199/sq.ft) <span className="bg-yellow-400 text-yellow-900 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">Most Chosen</span>
               </span>
-              <div className="text-3xl font-black text-white">{formatPrice(buildArea * rates.premium)}</div>
+              <div className="text-3xl font-bold text-white font-heading">{formatPrice(buildArea * rates.premium)}</div>
             </div>
             
             {/* Luxury Tier */}
             <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 text-center transition-all hover:shadow-md">
               <span className="text-sm font-bold text-gray-600 block mb-2">Luxury (₹2,799/sq.ft)</span>
-              <div className="text-2xl font-black text-gray-900">{formatPrice(buildArea * rates.luxury)}</div>
+              <div className="text-2xl font-bold text-gray-900">{formatPrice(buildArea * rates.luxury)}</div>
             </div>
           </div>
 

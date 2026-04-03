@@ -26,29 +26,26 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 w-full z-50 transition-colors duration-300 py-4 ${
         isScrolled
-          ? "bg-white/95 backdrop-blur-md shadow-sm py-3"
-          : "bg-white py-5"
+          ? "bg-white/95 backdrop-blur-md shadow-sm"
+          : "bg-white"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
           {/* Logo & Tagline */}
-          <div className="flex flex-col">
-            <Link href="/" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl transition-transform group-hover:scale-105">
-                V
-              </div>
-              <span className="text-2xl font-black tracking-tight text-gray-900">
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl transition-transform group-hover:scale-105 shrink-0">
+              V
+            </div>
+            <div className="flex items-baseline gap-2">
+              <span className="text-2xl font-black tracking-tight text-gray-900 font-heading">
                 Vaastu<span className="text-blue-600">Corp</span>
               </span>
-            </Link>
-            <span className="text-xs text-gray-500 font-medium ml-12 -mt-1 hidden sm:block">
-              Builders you can trust
-            </span>
-          </div>
+            </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">

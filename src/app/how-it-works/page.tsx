@@ -2,22 +2,22 @@ import Link from "next/link";
 import { 
   Users, MapPin, Scale3d, FileSignature, 
   ScrollText, Flame, Beaker, Hammer, 
-  BrickWall, Grid, PaintRoller, MoveRight, Key 
+  BrickWall, Grid, PaintRoller, MoveRight, Key,
+  CheckCircle, Clock, ShieldCheck, Camera, HardHat
 } from "lucide-react";
 import FinalCTASection from "@/components/home/FinalCTASection";
-import VaastuQualityBlock from "@/components/ui/VaastuQualityBlock";
 
 const steps = [
-  { title: "Initial Consultation & Site Visit", icon: Users, img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&fm=webp&q=60" },
-  { title: "Architectural Design & 3D Floor Plans", icon: Scale3d, img: "https://images.unsplash.com/photo-1503387837-b154d5074ea2?auto=format&fit=crop&fm=webp&q=60" },
+  { title: "Initial Consultation & Site Visit", icon: Users, img: "/images/initial-construction-image.png" },
+  { title: "Architectural Design & 3D Floor Plans", icon: Scale3d, img: "/images/architectural-design-image.png" },
   { title: "Detailed Estimation & Contract Signing", icon: FileSignature, img: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&fm=webp&q=60" },
-  { title: "Permits & Government Approvals", icon: ScrollText, img: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&fm=webp&q=60" },
-  { title: "Bhoomi Puja & Site Mobilization", icon: Flame, img: "https://images.unsplash.com/photo-1541888081198-d1f5926ec0d9?auto=format&fit=crop&fm=webp&q=60" },
+  { title: "Permits & Government Approvals", icon: ScrollText, img: "/images/government-approvals-image.png" },
+  { title: "Bhoomi Puja & Site Mobilization", icon: Flame, img: "/images/bhoomi-pooja-image.png" },
   { title: "Soil Testing & Foundation", icon: Beaker, img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&fm=webp&q=60" },
   { title: "Plinth Beam & Anti-Termite Treatment", icon: Hammer, img: "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&fm=webp&q=60" },
   { title: "Superstructure: Columns & Brick Masonry", icon: BrickWall, img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&fm=webp&q=60" },
-  { title: "Roof Slab Casting & Curing", icon: Grid, img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&fm=webp&q=60" },
-  { title: "Internal & External Plastering", icon: PaintRoller, img: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&fm=webp&q=60" },
+  { title: "Roof Slab Casting & Curing", icon: Grid, img: "/images/roof-slab-image.png" },
+  { title: "Internal & External Plastering", icon: PaintRoller, img: "/images/plastering-image.png" },
   { title: "MEP Services & Flooring", icon: MapPin, img: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&fm=webp&q=60" },
   { title: "Finishes, Painting & Handover", icon: Key, img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&fm=webp&q=60" },
 ];
@@ -26,49 +26,61 @@ export default function HowItWorks() {
   return (
     <div className="bg-gray-50 min-h-screen">
       
-      {/* Header Section */}
-      <div className="pt-24 pb-12 bg-white border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-3xl lg:text-4xl font-black text-gray-900 tracking-tight mb-4">
-              How We Work
-            </h1>
-            <p className="text-lg md:text-xl text-gray-600 font-medium leading-relaxed max-w-2xl mx-auto">
-              Building premium homes in Chennai with absolute transparency, fixed-price contracts, and zero hidden costs.
-            </p>
+      {/* 6-Card "Why Us" Grid */}
+      <div className="max-w-6xl mx-auto px-4 pt-6 md:pt-8 pb-8 md:pb-6 mt-0 relative z-10">
+        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-900 tracking-tight font-heading">Why Build With VaastuCorp?</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="bg-white p-6 rounded-[1.5rem] border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+            <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-5"><Users className="w-6 h-6" /></div>
+            <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading">Dedicated PM</h3>
+            <p className="text-sm font-medium text-gray-600">A single civil engineering expert handles your entire build end-to-end.</p>
           </div>
-        </div>
-      </div>
-
-      <div className="max-w-xl mx-auto px-4 mt-16 mb-4 relative z-10">
-        <div className="bg-white border border-gray-200 rounded-3xl p-6 flex flex-col sm:flex-row items-center gap-6 shadow-xl shadow-blue-900/5">
-          <div className="w-20 h-20 bg-blue-50 rounded-full overflow-hidden shrink-0 border border-blue-100 p-1 flex items-center justify-center">
-             <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80" alt="Project Manager" className="w-full h-full object-cover rounded-full" />
+          <div className="bg-white p-6 rounded-[1.5rem] border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+            <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-5"><Clock className="w-6 h-6" /></div>
+            <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading">Strict Deadlines</h3>
+            <p className="text-sm font-medium text-gray-600">If we delay beyond the contracted grace period, we pay you a strict penalty.</p>
           </div>
-          <div className="text-center sm:text-left">
-             <h3 className="text-xs font-black tracking-widest text-blue-600 uppercase mb-1.5">Your Single Point of Contact</h3>
-             <p className="text-gray-900 font-bold text-lg mb-2 leading-tight">Dedicated Project Manager</p>
-             <p className="text-sm font-medium text-gray-500 leading-snug">A dedicated civil engineer handles your entire build from end to end. Zero chaos, weekly WhatsApp reports, and complete transparency.</p>
+          <div className="bg-white p-6 rounded-[1.5rem] border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+            <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-5"><FileSignature className="w-6 h-6" /></div>
+            <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading">Fixed Pricing</h3>
+            <p className="text-sm font-medium text-gray-600">Crystal clear contracts. No unexpected hikes. No disguised costs.</p>
+          </div>
+          <div className="bg-white p-6 rounded-[1.5rem] border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+            <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-5"><ShieldCheck className="w-6 h-6" /></div>
+            <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading">12-Year Warranty</h3>
+            <p className="text-sm font-medium text-gray-600">Rock-solid structural warranty on every single home we build.</p>
+          </div>
+          <div className="bg-white p-6 rounded-[1.5rem] border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+            <div className="w-12 h-12 bg-green-50 text-green-600 rounded-xl flex items-center justify-center mb-5"><Camera className="w-6 h-6" /></div>
+            <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading">Daily Visuals</h3>
+            <p className="text-sm font-medium text-gray-600">Daily photos and weekly video walkthroughs strictly via WhatsApp.</p>
+          </div>
+          <div className="bg-white p-6 rounded-[1.5rem] border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+            <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-5"><HardHat className="w-6 h-6" /></div>
+            <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading">Premium Materials</h3>
+            <p className="text-sm font-medium text-gray-600">We only use top-grade verified materials like Tata Steel and UltraTech Cement.</p>
           </div>
         </div>
       </div>
       
       {/* 12-Step Vertical Timeline Framework */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative">
-        
-        {/* Center Guide Line */}
-        <div className="absolute left-8 md:left-1/2 top-24 bottom-24 w-0.5 bg-gray-200 md:-translate-x-1/2 z-0" />
+      <section className="bg-white border-y border-gray-100 pb-8 pt-8 md:pt-12 mt-10 md:mt-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-900 tracking-tight font-heading">Our Construction Process</h2>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4 relative">
+          
+          {/* Center Guide Line */}
+          <div className="absolute left-8 md:left-1/2 top-4 bottom-24 w-0.5 bg-gray-200 md:-translate-x-1/2 z-0" />
 
         {steps.map((step, idx) => {
           const isEven = idx % 2 === 0; // True means left side on desktop
           const Icon = step.icon;
 
           return (
-            <div key={idx} className={`relative flex items-center mb-16 w-full z-10 flex-col md:flex-row ${isEven ? 'md:flex-row-reverse' : ''}`}>
+            <div key={idx} className={`relative flex items-center mb-8 w-full z-10 flex-col md:flex-row ${isEven ? 'md:flex-row-reverse' : ''}`}>
               
               {/* Timeline Center Dot Node */}
               <div className="absolute left-8 md:left-1/2 w-10 h-10 rounded-full bg-blue-600 border-[6px] border-gray-50 shadow-sm flex items-center justify-center transform -translate-x-1/2 z-20">
-                 <span className="text-white text-[10px] font-black">{idx + 1}</span>
+                 <span className="text-white text-[10px] font-bold">{idx + 1}</span>
               </div>
 
               {/* Empty Spacer Side */}
@@ -88,10 +100,10 @@ export default function HowItWorks() {
                     
                     {/* Text Details */}
                     <div className="flex flex-col flex-1">
-                      <span className="text-[10px] sm:text-[11px] font-black text-blue-600 uppercase tracking-widest mb-1 opacity-80">
+                      <span className="text-[10px] sm:text-[11px] font-bold text-blue-600 uppercase tracking-widest mb-1 opacity-80">
                         Phase {String(idx + 1).padStart(2, '0')}
                       </span>
-                      <h3 className="text-base sm:text-lg font-bold text-gray-900 leading-tight">
+                      <h3 className="text-base sm:text-lg font-bold text-gray-900 leading-tight font-heading">
                         {step.title}
                       </h3>
                     </div>
@@ -149,9 +161,32 @@ export default function HowItWorks() {
             </div>
           );
         })}
+        </div>
+      </section>
+
+      {/* Trust Signals Banner */}
+      <div className="bg-white py-8 border-y border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
+            <div className="p-4">
+              <h4 className="text-5xl font-bold text-blue-600 mb-2 font-heading">15+</h4>
+              <p className="text-xl font-bold text-gray-900">Years Experience</p>
+              <p className="text-gray-500 font-medium mt-1">Deep roots in Chennai</p>
+            </div>
+            <div className="p-4 pt-8 md:pt-4">
+              <h4 className="text-5xl font-bold text-blue-600 mb-2 font-heading">200+</h4>
+              <p className="text-xl font-bold text-gray-900">Projects Completed</p>
+              <p className="text-gray-500 font-medium mt-1">Homes handed over safely</p>
+            </div>
+            <div className="p-4 pt-8 md:pt-4">
+              <h4 className="text-5xl font-bold text-blue-600 mb-2 font-heading">Zero</h4>
+              <p className="text-xl font-bold text-gray-900">Deadline Defaults</p>
+              <p className="text-gray-500 font-medium mt-1">Contractually protected</p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <VaastuQualityBlock />
       <FinalCTASection />
 
     </div>

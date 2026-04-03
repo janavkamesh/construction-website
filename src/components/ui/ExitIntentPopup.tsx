@@ -46,15 +46,15 @@ export default function ExitIntentPopup() {
         <div className="bg-blue-600 p-8 text-center relative overflow-hidden">
           <button 
             onClick={() => setIsVisible(false)}
-            className="absolute top-4 right-4 text-blue-100 hover:text-white transition-colors z-20"
+            className="absolute top-4 right-4 text-blue-100 hover:text-white hover:bg-blue-700/50 rounded-full p-2 transition-colors z-20"
             aria-label="Close"
           >
-            <X className="w-6 h-6" />
+            <X className="w-5 h-5" />
           </button>
           <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 relative z-10 shadow-lg">
             <HelpCircle className="w-8 h-8 text-blue-600" />
           </div>
-          <h2 className="text-2xl font-black text-white tracking-tight relative z-10">
+          <h2 className="text-2xl font-bold text-white tracking-tight relative z-10 font-heading">
             Wait - get a free cost estimate before you go!
           </h2>
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />

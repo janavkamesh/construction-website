@@ -54,15 +54,15 @@ export default function PricingSection() {
   ];
 
   return (
-    <section className="py-24 bg-white relative">
+    <section className="py-12 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="text-center max-w-3xl mx-auto mb-16 px-4">
-          <h2 className="text-3xl md:text-5xl font-black text-gray-900 tracking-tight leading-tight mb-6">
-            Transparent Tiered Pricing.
+        <div className="text-center max-w-3xl mx-auto mb-8 px-4">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-6 font-heading">
+            Transparent House Construction Cost in Chennai (2025-2026)
           </h2>
           <p className="text-lg text-gray-600 font-medium">
-            Know exactly what brand of steel goes into your walls. No corner-cutting.
+            Stop guessing. Compare our fully detailed construction packages. We hide nothing.
           </p>
         </div>
 
@@ -83,11 +83,11 @@ export default function PricingSection() {
               )}
               
               <div className="mb-8 border-b border-gray-100 pb-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{tier.name}</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2 font-heading">{tier.name}</h3>
                 <p className="text-gray-500 text-sm font-medium mb-6 h-10">{tier.desc}</p>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-3xl font-black text-gray-900 leading-none">₹</span>
-                  <span className="text-5xl font-black text-gray-900 tracking-tighter leading-none">{tier.price}</span>
+                  <span className="text-3xl font-black text-gray-900 leading-none font-heading">₹</span>
+                  <span className="text-5xl font-black text-gray-900 tracking-tighter leading-none font-heading">{tier.price}</span>
                   <span className="text-gray-500 font-semibold">/ sq.ft</span>
                 </div>
               </div>
@@ -131,7 +131,7 @@ export default function PricingSection() {
           ))}
         </div>
 
-        <div className="mt-12 text-center flex items-center justify-center gap-2 text-sm text-gray-500 font-medium">
+        <div className="mt-6 text-center flex items-center justify-center gap-2 text-sm text-gray-500 font-medium">
           <ShieldCheck className="w-4 h-4 text-green-500" />
           <span>GST and approval charges are calculated separately as per government norms.</span>
         </div>

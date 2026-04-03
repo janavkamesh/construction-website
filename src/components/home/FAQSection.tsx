@@ -34,11 +34,11 @@ export default function FAQSection() {
   ];
 
   return (
-    <section className="py-24 bg-gray-50 border-t border-gray-100 relative">
+    <section className="py-12 bg-gray-50 border-t border-gray-100 relative">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-black text-gray-900 tracking-tight leading-tight mb-6">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-6 font-heading">
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-gray-600 font-medium">

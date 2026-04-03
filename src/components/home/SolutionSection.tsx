@@ -20,21 +20,21 @@ export default function SolutionSection() {
   ];
 
   return (
-    <section className="py-24 bg-blue-900 text-white relative overflow-hidden">
+    <section className="py-12 bg-blue-900 text-white relative overflow-hidden">
       {/* Background Decor */}
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03]" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <div className="text-center max-w-3xl mx-auto mb-16 px-4">
-          <span className="text-blue-400 font-bold tracking-widest uppercase text-sm mb-4 block">The VaastuCorp Way</span>
-          <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight leading-tight mb-6">
+        <div className="text-center max-w-3xl mx-auto mb-8 px-4">
+          <span className="text-blue-400 font-bold tracking-widest uppercase text-sm mb-4 block font-heading">The VaastuCorp Way</span>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-6 font-heading">
             Construction the way it should always have been.
           </h2>
           <div className="w-24 h-1.5 bg-blue-500 rounded-full mx-auto mb-8" />
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-3 gap-8 lg:gap-6">
           {pillars.map((pillar, i) => (
             <div 
               key={i}
@@ -43,7 +43,7 @@ export default function SolutionSection() {
               <div className="w-16 h-16 bg-blue-700 group-hover:bg-blue-50 rounded-2xl flex items-center justify-center mb-8 transition-colors">
                 {pillar.icon}
               </div>
-              <h3 className="text-xl font-bold tracking-tight text-white group-hover:text-blue-900 mb-4 transition-colors">
+              <h3 className="text-xl font-bold tracking-tight text-white group-hover:text-blue-900 mb-4 transition-colors font-heading">
                 {pillar.title}
               </h3>
               <p className="text-blue-200 group-hover:text-gray-600 leading-relaxed font-medium transition-colors">

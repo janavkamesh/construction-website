@@ -9,15 +9,15 @@ interface SoftCTAProps {
 
 export default function SoftCTA({ heading, subtext, buttonText = "Book Free Site Visit" }: SoftCTAProps) {
   return (
-    <section className="py-12 bg-white relative z-10 -mt-6">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-8 relative z-10 w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-blue-600 rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl shadow-blue-600/20 border border-blue-500">
           <div className="flex flex-col sm:flex-row items-center gap-5 text-white text-center sm:text-left w-full md:w-auto">
             <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center shrink-0 border border-white/20">
               <Calendar className="w-8 h-8 text-blue-50" />
             </div>
             <div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-1 tracking-tight">{heading}</h3>
+              <h3 className="text-xl sm:text-2xl font-bold mb-1 tracking-tight font-heading">{heading}</h3>
               <p className="text-blue-100 text-sm font-medium leading-relaxed">{subtext}</p>
             </div>
           </div>

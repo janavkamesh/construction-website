@@ -19,21 +19,21 @@ export default function Packages() {
   const total = typeof sqft === "number" ? sqft * tier : 0;
 
   return (
-    <div className="pt-12 pb-24 bg-gray-50 min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+    <div className="pt-6 bg-gray-50 min-h-screen w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
         
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <h1 className="text-3xl md:text-3xl lg:text-4xl font-black text-gray-900 tracking-tight mb-4">Packages & Pricing</h1>
-          <p className="text-lg text-gray-600 font-medium max-w-2xl mx-auto">Building premium homes in Chennai with absolute transparency, fixed-price contracts, and zero hidden costs.</p>
+        <div className="text-center max-w-3xl mx-auto mb-8">
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-2 font-heading">Packages & Pricing</h1>
+          <p className="text-sm md:text-base text-gray-600 font-medium max-w-2xl mx-auto">Building premium homes in Chennai with absolute transparency, fixed-price contracts, and zero hidden costs.</p>
         </div>
 
         {/* Interactive Calculator */}
-        <div className="max-w-3xl mx-auto bg-white rounded-3xl p-8 md:p-12 shadow-xl shadow-blue-900/5 border border-gray-100">
+        <div className="max-w-3xl mx-auto bg-white rounded-3xl p-8 md:p-6 shadow-xl shadow-blue-900/5 border border-gray-100">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center shrink-0">
               <Calculator className="w-6 h-6" />
             </div>
-            <h2 className="text-2xl font-bold text-gray-900">Instant Cost Calculator</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 font-heading">Instant Cost Calculator</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-8 border-b border-gray-100 pb-8">
@@ -66,7 +66,7 @@ export default function Packages() {
             <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl pointer-events-none" />
             <div>
               <span className="block text-blue-200 text-sm font-bold mb-1">Estimated Total Cost</span>
-              <span className="text-4xl md:text-5xl font-black tracking-tight leading-none">
+              <span className="text-4xl md:text-5xl font-bold tracking-tight leading-none font-heading">
                 ₹{total.toLocaleString('en-IN')}
               </span>
             </div>
@@ -86,48 +86,48 @@ export default function Packages() {
 
       <PricingSection />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="grid lg:grid-cols-2 gap-8 items-start">
           <div>
             {/* Material Transparency */}
-            <div className="mb-12">
-              <h2 className="text-2xl font-black text-gray-900 mb-6">Standard Material Partners</h2>
+            <div className="mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-6 font-heading">Standard Material Partners</h2>
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
-                  <p className="text-sm font-bold text-gray-900 mb-1">Cement</p>
-                  <p className="text-sm text-gray-500 font-medium">UltraTech / Ramco</p>
+                <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex items-center justify-between">
+                  <div>
+                    <p className="text-sm font-bold text-gray-900 mb-1">Cement</p>
+                    <p className="text-sm text-gray-500 font-medium">UltraTech / Ramco</p>
+                  </div>
+                  <div className="hidden sm:block text-xs font-bold text-gray-300 italic">ULTRATECH</div>
                 </div>
-                <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
-                  <p className="text-sm font-bold text-gray-900 mb-1">Wiring</p>
-                  <p className="text-sm text-gray-500 font-medium">Finolex</p>
+                <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex items-center justify-between">
+                  <div>
+                    <p className="text-sm font-bold text-gray-900 mb-1">Wiring</p>
+                    <p className="text-sm text-gray-500 font-medium">Finolex</p>
+                  </div>
+                  <div className="hidden sm:block text-[10px] font-bold tracking-widest text-[#d82a2a] uppercase">Finolex</div>
                 </div>
-                <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
-                  <p className="text-sm font-bold text-gray-900 mb-1">Plumbing</p>
-                  <p className="text-sm text-gray-500 font-medium">Ashirvad</p>
+                <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex items-center justify-between">
+                  <div>
+                    <p className="text-sm font-bold text-gray-900 mb-1">Plumbing</p>
+                    <p className="text-sm text-gray-500 font-medium">Ashirvad</p>
+                  </div>
+                  <div className="hidden sm:block text-xs font-bold text-blue-900/60 uppercase">Ashirvad</div>
                 </div>
-                <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
-                  <p className="text-sm font-bold text-gray-900 mb-1">Steel</p>
-                  <p className="text-sm text-gray-500 font-medium">JSW / Tata Tiscon</p>
+                <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex items-center justify-between">
+                  <div>
+                    <p className="text-sm font-bold text-gray-900 mb-1">Steel</p>
+                    <p className="text-sm text-gray-500 font-medium">JSW / Tata Tiscon</p>
+                  </div>
+                  <div className="hidden sm:block text-xs font-bold text-gray-400">TATA</div>
                 </div>
               </div>
-            </div>
-
-            {/* Out of Scope */}
-            <div className="bg-red-50 border border-red-100 rounded-2xl p-6 shadow-sm">
-              <h3 className="text-red-800 font-bold text-base mb-3 flex items-center gap-2">
-                <span className="text-xl">⚠️</span> What's Not Included (Out of Scope)
-              </h3>
-              <ul className="list-disc list-inside text-red-700/90 font-medium space-y-1.5 text-sm">
-                <li>EB Connection Fees & Deposits</li>
-                <li>Borewell Drilling & Motor Installation</li>
-                <li>Plan Approval Fees (if out of city limits)</li>
-              </ul>
             </div>
           </div>
 
           {/* Financial FAQ */}
           <div>
-            <h2 className="text-2xl font-black text-gray-900 mb-6">Frequently Asked Pricing Questions</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-6 font-heading">Frequently Asked Questions</h2>
             <div className="space-y-4">
               <details className="group bg-white rounded-2xl border border-gray-100 shadow-sm [&_summary::-webkit-details-marker]:hidden">
                 <summary className="cursor-pointer p-6 font-bold text-gray-900 flex justify-between items-center text-sm md:text-base">

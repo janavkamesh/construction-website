@@ -4,7 +4,7 @@ import { Star, CheckCircle2, ShieldCheck, MapPin } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full min-h-[calc(100vh-80px)] flex flex-col justify-center items-center overflow-hidden bg-gray-900 pt-20 pb-12 px-4 sm:px-6 lg:px-8">
+    <section className="relative w-full min-h-[calc(100vh-80px)] flex flex-col justify-center items-center overflow-hidden bg-gray-900 pt-8 pb-10 px-4 sm:px-6 lg:px-8">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -19,7 +19,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-black/70" />
       </div>
 
-      <div className="relative z-10 w-full max-w-5xl mx-auto flex flex-col items-center text-center mt-auto mb-auto">
+      <div className="relative z-10 w-full max-w-5xl mx-auto flex flex-col items-center text-center mt-auto mb-auto translate-y-[-10px]">
         
         {/* Subtitle / Tag */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-600/30 backdrop-blur-md border border-blue-400/30 text-blue-50 text-[10px] sm:text-xs font-bold tracking-widest uppercase mb-4 shadow-xl animate-fade-in-up">
@@ -28,22 +28,17 @@ export default function HeroSection() {
         </div>
         
         {/* Headline */}
-        <h1 className="text-3xl sm:text-4xl lg:text-[4rem] font-black text-white tracking-tight leading-[1.1] mb-4 animate-fade-in-up drop-shadow-2xl" style={{ animationDelay: '100ms' }}>
-          Your home, built exactly as planned.
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white leading-[1.2] mb-6 animate-fade-in-up drop-shadow-2xl font-heading" style={{ animationDelay: '50ms' }}>
+          Build your dream home in Chennai — fixed price, on time, zero surprises.
         </h1>
 
-        {/* Highlighted Key Pitch */}
-        <div className="text-xl sm:text-2xl lg:text-3xl font-black text-blue-400 mb-4 animate-fade-in-up drop-shadow-xl" style={{ animationDelay: '150ms' }}>
-          Fixed price. On time.
-        </div>
-
-        {/* Description */}
-        <p className="text-sm sm:text-base lg:text-lg text-gray-200 mb-6 max-w-3xl leading-relaxed animate-fade-in-up font-medium drop-shadow-md" style={{ animationDelay: '200ms' }}>
-          We take the stress out of building your dream home in Chennai. Zero hidden costs, transparent material specifications, and a dedicated team managing everything from start to finish.
+        {/* Description / Sub-headline */}
+        <p className="text-sm sm:text-base lg:text-lg text-gray-200 mb-8 max-w-3xl leading-relaxed animate-fade-in-up font-medium drop-shadow-md" style={{ animationDelay: '100ms' }}>
+          From architectural design to final handover, we manage the entire construction process so you don't have to worry. Trusted by 150+ families across Chennai.
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-col w-full sm:flex-row sm:w-auto items-center justify-center gap-4 animate-fade-in-up" style={{ animationDelay: '300ms' }}>
+        <div className="flex flex-col w-full sm:flex-row sm:w-auto items-center justify-center gap-4 animate-fade-in-up" style={{ animationDelay: '150ms' }}>
           <Link
             href="#book"
             className="w-full sm:w-auto text-center bg-blue-600 text-white px-6 py-2.5 rounded-lg font-bold text-sm sm:text-base hover:bg-blue-500 shadow-xl shadow-blue-600/30 transition-all active:scale-[0.98]"
@@ -60,42 +55,27 @@ export default function HeroSection() {
       </div>
 
       {/* Trust Signals Card - Large Box */}
-      <div className="relative z-10 w-full max-w-4xl mx-auto mt-8 lg:mt-10 animate-fade-in-up" style={{ animationDelay: '400ms' }}>
-        <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-4 sm:p-5 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
+      <div className="relative z-10 w-full max-w-4xl mx-auto mt-6 lg:mt-8 animate-fade-in-up translate-y-[-10px]" style={{ animationDelay: '200ms' }}>
+        <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-4 sm:p-5 shadow-2xl grid grid-cols-2 md:grid-cols-4 items-center justify-between gap-4 md:gap-6 divide-x-0 md:divide-x divide-white/20">
           
-          {/* Trust 1 */}
-          <div className="flex flex-col items-center flex-1 text-center w-full">
-            <div className="flex items-center gap-1.5 mb-1">
-              <Star className="w-5 h-5 fill-yellow-400 text-yellow-400 drop-shadow-sm" />
-              <span className="text-2xl sm:text-3xl font-black text-white">4.9/5</span>
-            </div>
-            <span className="text-[10px] sm:text-xs text-blue-200 font-bold uppercase tracking-widest">Google Rating</span>
+          <div className="flex flex-col items-center text-center w-full pb-4 md:pb-0 border-b border-white/20 md:border-b-0">
+            <span className="text-2xl sm:text-3xl font-bold text-white mb-1 font-heading">10+</span>
+            <span className="text-[10px] sm:text-xs text-blue-200 font-bold uppercase tracking-widest text-center px-2">Years of Experience</span>
           </div>
 
-          {/* Divider */}
-          <div className="hidden md:block w-px h-12 bg-white/20"></div>
-          <div className="block md:hidden h-px w-16 bg-white/20"></div>
-
-          {/* Trust 2 */}
-          <div className="flex flex-col items-center flex-1 text-center w-full">
-            <div className="flex items-center gap-1.5 mb-1">
-              <CheckCircle2 className="w-5 h-5 text-green-400 drop-shadow-sm" />
-              <span className="text-2xl sm:text-3xl font-black text-white">150+</span>
-            </div>
-            <span className="text-[10px] sm:text-xs text-blue-200 font-bold uppercase tracking-widest">Homes Built</span>
+          <div className="flex flex-col items-center text-center w-full pb-4 md:pb-0 border-b border-white/20 md:border-b-0">
+            <span className="text-2xl sm:text-3xl font-bold text-white mb-1 font-heading">150+</span>
+            <span className="text-[10px] sm:text-xs text-blue-200 font-bold uppercase tracking-widest text-center px-2">Completed Projects</span>
           </div>
 
-          {/* Divider */}
-          <div className="hidden md:block w-px h-12 bg-white/20"></div>
-          <div className="block md:hidden h-px w-16 bg-white/20"></div>
+          <div className="flex flex-col items-center text-center w-full pt-2 md:pt-0">
+            <span className="text-2xl sm:text-3xl font-bold text-white mb-1 font-heading">5</span>
+            <span className="text-[10px] sm:text-xs text-blue-200 font-bold uppercase tracking-widest text-center px-2">Years Warranty</span>
+          </div>
 
-          {/* Trust 3 */}
-          <div className="flex flex-col items-center flex-1 text-center w-full">
-            <div className="flex items-center gap-1.5 mb-1">
-              <ShieldCheck className="w-5 h-5 text-blue-400 drop-shadow-sm" />
-              <span className="text-2xl sm:text-3xl font-black text-white">12 Yrs</span>
-            </div>
-            <span className="text-[10px] sm:text-xs text-blue-200 font-bold uppercase tracking-widest">RERA Reg.</span>
+          <div className="flex flex-col items-center text-center w-full pt-2 md:pt-0">
+            <span className="text-2xl sm:text-3xl font-bold text-white mb-1 font-heading">200+</span>
+            <span className="text-[10px] sm:text-xs text-blue-200 font-bold uppercase tracking-widest text-center px-2">Construction Workers</span>
           </div>
 
         </div>

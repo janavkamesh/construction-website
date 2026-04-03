@@ -5,22 +5,22 @@ import Image from "next/image";
 
 export default function FinalCTASection() {
   return (
-    <section id="book" className="py-24 bg-blue-900 relative overflow-hidden">
+    <section id="book" className="pt-12 pb-6 lg:pb-8 bg-blue-900 relative overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-500/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
         
         {/* Text Side */}
         <div className="text-center lg:text-left flex-1">
-          <h2 className="text-[2.5rem] leading-[1.1] sm:text-5xl lg:text-5xl font-black text-white tracking-tight mb-6">
-            Stop guessing. Start building.
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-6 font-heading">
+            Ready to build? Get a free site visit this week.
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-xl mx-auto lg:mx-0 font-medium">
-            Let our structural experts visit your plot and give you a rock-solid, fixed-price estimate. <span className="text-white font-bold underline decoration-blue-500 underline-offset-4">Zero cost. Zero obligation.</span>
+            Speak directly with our civil experts, not a salesperson.
           </p>
           
-          <div className="hidden lg:flex flex-col gap-6 mt-12 bg-blue-800/40 border border-blue-700/50 p-6 rounded-3xl backdrop-blur-md">
+          <div className="hidden lg:flex flex-col gap-6 mt-6 bg-blue-800/40 border border-blue-700/50 p-6 rounded-3xl backdrop-blur-md">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center shrink-0">
                 <Navigation2 className="w-6 h-6 text-blue-600 fill-blue-600" />
