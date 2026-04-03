@@ -4,7 +4,7 @@ import { Star, CheckCircle2, ShieldCheck, MapPin } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-[100vh] sm:h-screen flex flex-col justify-center items-center overflow-hidden bg-gray-900 pt-24 pb-8 lg:pt-28 lg:pb-12 px-4 sm:px-6 lg:px-8">
+    <section className="relative w-full min-h-[calc(100vh-80px)] flex flex-col justify-center items-center overflow-hidden bg-gray-900 pt-20 pb-12 px-4 sm:px-6 lg:px-8">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -28,8 +28,8 @@ export default function HeroSection() {
         </div>
         
         {/* Headline */}
-        <h1 className="text-3xl sm:text-4xl lg:text-[3.5rem] font-black text-white tracking-tight leading-[1.1] mb-4 animate-fade-in-up drop-shadow-2xl" style={{ animationDelay: '100ms' }}>
-          Your home, built<br className="hidden sm:block" /> exactly as planned.
+        <h1 className="text-3xl sm:text-4xl lg:text-[4rem] font-black text-white tracking-tight leading-[1.1] mb-4 animate-fade-in-up drop-shadow-2xl" style={{ animationDelay: '100ms' }}>
+          Your home, built exactly as planned.
         </h1>
 
         {/* Highlighted Key Pitch */}
@@ -60,42 +60,42 @@ export default function HeroSection() {
       </div>
 
       {/* Trust Signals Card - Large Box */}
-      <div className="relative z-10 w-full max-w-4xl mx-auto mt-6 lg:mt-8 animate-fade-in-up" style={{ animationDelay: '400ms' }}>
-        <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-4 lg:p-6 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
+      <div className="relative z-10 w-full max-w-4xl mx-auto mt-8 lg:mt-10 animate-fade-in-up" style={{ animationDelay: '400ms' }}>
+        <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-4 sm:p-5 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
           
           {/* Trust 1 */}
           <div className="flex flex-col items-center flex-1 text-center w-full">
             <div className="flex items-center gap-1.5 mb-1">
-              <Star className="w-5 h-5 sm:w-6 sm:h-6 fill-yellow-400 text-yellow-400 drop-shadow-sm" />
-              <span className="text-2xl sm:text-3xl lg:text-4xl font-black text-white">4.9/5</span>
+              <Star className="w-5 h-5 fill-yellow-400 text-yellow-400 drop-shadow-sm" />
+              <span className="text-2xl sm:text-3xl font-black text-white">4.9/5</span>
             </div>
-            <span className="text-xs sm:text-sm lg:text-base text-blue-200 font-bold uppercase tracking-widest">Google Rating</span>
+            <span className="text-[10px] sm:text-xs text-blue-200 font-bold uppercase tracking-widest">Google Rating</span>
           </div>
 
           {/* Divider */}
-          <div className="hidden md:block w-px h-16 bg-white/20"></div>
+          <div className="hidden md:block w-px h-12 bg-white/20"></div>
           <div className="block md:hidden h-px w-16 bg-white/20"></div>
 
           {/* Trust 2 */}
           <div className="flex flex-col items-center flex-1 text-center w-full">
             <div className="flex items-center gap-1.5 mb-1">
-              <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-green-400 drop-shadow-sm" />
-              <span className="text-2xl sm:text-3xl lg:text-4xl font-black text-white">150+</span>
+              <CheckCircle2 className="w-5 h-5 text-green-400 drop-shadow-sm" />
+              <span className="text-2xl sm:text-3xl font-black text-white">150+</span>
             </div>
-            <span className="text-xs sm:text-sm lg:text-base text-blue-200 font-bold uppercase tracking-widest">Homes Built</span>
+            <span className="text-[10px] sm:text-xs text-blue-200 font-bold uppercase tracking-widest">Homes Built</span>
           </div>
 
           {/* Divider */}
-          <div className="hidden md:block w-px h-16 bg-white/20"></div>
+          <div className="hidden md:block w-px h-12 bg-white/20"></div>
           <div className="block md:hidden h-px w-16 bg-white/20"></div>
 
           {/* Trust 3 */}
           <div className="flex flex-col items-center flex-1 text-center w-full">
             <div className="flex items-center gap-1.5 mb-1">
-              <ShieldCheck className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400 drop-shadow-sm" />
-              <span className="text-2xl sm:text-3xl lg:text-4xl font-black text-white">12 Yrs</span>
+              <ShieldCheck className="w-5 h-5 text-blue-400 drop-shadow-sm" />
+              <span className="text-2xl sm:text-3xl font-black text-white">12 Yrs</span>
             </div>
-            <span className="text-xs sm:text-sm lg:text-base text-blue-200 font-bold uppercase tracking-widest">RERA Reg.</span>
+            <span className="text-[10px] sm:text-xs text-blue-200 font-bold uppercase tracking-widest">RERA Reg.</span>
           </div>
 
         </div>

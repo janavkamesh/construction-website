@@ -12,12 +12,24 @@ export default function Home() {
   return (
     <>
       <HeroSection />
+      
       <HomeProjectsSection />
-      <SoftCTA />
+      
+      <SoftCTA 
+        heading="Want a home like the ones above?" 
+        subtext="Schedule a free site visit with our structural experts to discuss your plot." 
+      />
+      
       <TestimonialsSection />
       <ProcessSection />
       <CostCalculator />
       <PricingSection />
+      
+      <SoftCTA 
+        heading="Ready to lock in a fixed-price contract?" 
+        subtext="Get a rock-solid estimate for your specific plot in Chennai." 
+      />
+      
       <FAQSection />
       <FinalCTASection />
     </>

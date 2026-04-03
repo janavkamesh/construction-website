@@ -21,6 +21,27 @@ const testimonials = [
     location: "Anna Nagar",
     quote: "As an ex-civil engineer, I am extremely particular about beam curing and steel quality. I cross-checked their JSW steel and Ultratech cement bills. Their structural integrity is flawless. Zero hidden costs.",
     objectionDefeated: "Material Quality & Hidden Costs",
+  },
+  {
+    name: "Dr. Lakshmi V.",
+    role: "Government Doctor",
+    location: "Tambaram",
+    quote: "I was extremely anxious about budget escalations. Every other contractor I spoke to had vague pricing. VaastuCorp's itemized bill was identical to my final payment amount. Highly trustworthy people.",
+    objectionDefeated: "Budget Escalation",
+  },
+  {
+    name: "Prakash R.",
+    role: "Business Owner",
+    location: "T. Nagar",
+    quote: "The in-house architect team completely optimized our small 1200 Sq.Ft plot. The house feels incredibly spacious, beautifully ventilated, and 100% Vaastu compliant without compromising on modern aesthetics.",
+    objectionDefeated: "Design Limitations",
+  },
+  {
+    name: "Deepa & Ramesh",
+    role: "First-time Builders",
+    location: "Pallikaranai",
+    quote: "We didn't know anything about approvals, soil testing, or electricity boards. The VaastuCorp liaison team seamlessly handled every single government permit without us having to step into a single office.",
+    objectionDefeated: "Bureaucracy & Permits"
   }
 ];
 

@@ -7,8 +7,8 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header content */}
-        <div className="text-center max-w-3xl mx-auto mb-20">
-          <h1 className="text-4xl md:text-5xl font-black text-gray-900 tracking-tight mb-6">The VaastuCorp Story</h1>
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h1 className="text-3xl md:text-3xl lg:text-4xl font-black text-gray-900 tracking-tight mb-4">The VaastuCorp Story</h1>
           <p className="text-lg text-gray-600 font-medium">Founded by engineers tired of seeing Chennai's homeowners taken advantage of.</p>
         </div>
 

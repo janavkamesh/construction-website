@@ -1,26 +1,32 @@
 import Link from "next/link";
 import { ArrowRight, Calendar } from "lucide-react";
 
-export default function SoftCTA() {
+interface SoftCTAProps {
+  heading: string;
+  subtext: string;
+  buttonText?: string;
+}
+
+export default function SoftCTA({ heading, subtext, buttonText = "Book Free Site Visit" }: SoftCTAProps) {
   return (
-    <section className="py-12 bg-gray-50">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6">
-        <div className="bg-blue-600 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl shadow-blue-600/20">
-          <div className="flex items-center gap-5 text-white">
-            <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center shrink-0">
-              <Calendar className="w-7 h-7" />
+    <section className="py-12 bg-white relative z-10 -mt-6">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-blue-600 rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl shadow-blue-600/20 border border-blue-500">
+          <div className="flex flex-col sm:flex-row items-center gap-5 text-white text-center sm:text-left w-full md:w-auto">
+            <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center shrink-0 border border-white/20">
+              <Calendar className="w-8 h-8 text-blue-50" />
             </div>
             <div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-1">Ready to start your project?</h3>
-              <p className="text-blue-100 text-sm font-medium">Schedule a free site visit with our civil engineers today.</p>
+              <h3 className="text-xl sm:text-2xl font-bold mb-1 tracking-tight">{heading}</h3>
+              <p className="text-blue-100 text-sm font-medium leading-relaxed">{subtext}</p>
             </div>
           </div>
           
           <Link
             href="#book"
-            className="shrink-0 w-full sm:w-auto text-center bg-white text-blue-700 px-8 py-3.5 rounded-xl font-bold flex justify-center items-center gap-2 hover:bg-blue-50 transition-colors shadow-lg shadow-black/10 active:scale-95"
+            className="shrink-0 w-full md:w-auto text-center bg-white text-blue-700 px-8 py-4 rounded-xl font-bold flex justify-center items-center gap-2 hover:bg-gray-50 transition-colors shadow-lg active:scale-95"
           >
-            Book Free Site Visit <ArrowRight className="w-4 h-4" />
+            {buttonText} <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
       </div>

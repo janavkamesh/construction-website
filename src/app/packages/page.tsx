@@ -20,8 +20,8 @@ export default function Packages() {
     <div className="pt-12 pb-24 bg-gray-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h1 className="text-4xl md:text-5xl font-black text-gray-900 tracking-tight mb-6">Packages & Pricing</h1>
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h1 className="text-3xl md:text-3xl lg:text-4xl font-black text-gray-900 tracking-tight mb-4">Packages & Pricing</h1>
           <p className="text-lg text-gray-600 font-medium">Fully transparent pricing. Calculate your exact construction cost right now.</p>
         </div>
 

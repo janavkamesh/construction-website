@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
           
           {/* Brand & Trust Column */}
-          <div className="space-y-6">
+          <div className="space-y-6 lg:col-span-2 xl:pr-16">
             <Link href="/" className="inline-block">
               <span className="text-3xl font-black tracking-tight text-white mb-2 block">
                 Vaastu<span className="text-blue-500">Corp</span>
@@ -18,7 +18,7 @@ export default function Footer() {
             <p className="text-sm text-gray-400 leading-relaxed max-w-sm">
               Building homes in Chennai with absolute transparency, fixed-price contracts, and zero hidden costs. Your dream home, exactly as planned.
             </p>
-            <div className="bg-gray-800/50 rounded-xl p-4 border border-gray-700/50 hover:bg-gray-800 transition-colors">
+            <div className="bg-gray-800/50 rounded-xl p-4 border border-gray-700/50 hover:bg-gray-800 transition-colors inline-block">
               <div className="flex items-center gap-3">
                 <div className="bg-green-500/10 p-2 rounded-lg">
                   <CheckCircle2 className="w-5 h-5 text-green-400" />
@@ -78,24 +78,6 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
-
-          {/* CTA Box */}
-          <div className="bg-blue-600 rounded-2xl p-6 shadow-xl shadow-blue-900/20 relative overflow-hidden group">
-            <div className="absolute inset-0 bg-blue-500 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-0"></div>
-            <div className="relative z-10">
-              <h3 className="text-white font-bold text-lg mb-2">Ready to build?</h3>
-              <p className="text-blue-100 text-sm mb-6 leading-relaxed">
-                Book a free site visit today. We'll give you a reliable estimate on the spot.
-              </p>
-              <Link 
-                href="#book"
-                className="bg-white text-blue-600 font-bold px-5 py-2.5 rounded-xl text-sm inline-flex items-center justify-between w-full hover:bg-gray-50 transition-colors active:scale-95"
-              >
-                <span>Book Free Visit</span>
-                <MoveRight className="w-4 h-4" />
-              </Link>
-            </div>
           </div>
         </div>
 
